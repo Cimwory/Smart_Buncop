@@ -1,0 +1,16 @@
+{
+  "BUNCOP_API_BASE": "http://10.14.41.225:8003/api/v1",
+  "BUNCOP_SYNC_BASE": "http://10.14.41.225:8003",
+  "BUNCOP_DEVICE_INKUBATOR": "inkubator_1",
+  "BUNCOP_DEVICE_NUTRIMIX": "nutrimix_1",
+  "BUNCOP_BOOT_DEVICE_ID": "inkubator_1",
+  "BUNCOP_SYSTEM_ACTIVITY_KEY": "9f2a7d1c4b8e6f03d5a1c9e7b2f4a6d8e3c1b5f7a9d2c4e6f8b0a3d5c7e9f1a",
+  "BUNCOP_MQTT_HOST": "10.14.41.20",
+  "BUNCOP_MQTT_PORT": "1773",
+  "BUNCOP_MQTT_WS_PORT": "7073",
+  "BUNCOP_MQTT_USERNAME": "buncop_app_ctrl",
+  "BUNCOP_MQTT_PASSWORD": "Kinds123",
+  "BUNCOP_MQTT_USE_TLS": "false",
+  "BUNCOP_MQTT_TOPIC_PREFIX": "buncop",
+  "BUNCOP_NOTIFY_TOPIC": "esp_status"
+}
