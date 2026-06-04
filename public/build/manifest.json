@@ -1,0 +1,23 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CCfG1Wbb.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CBbTb_k3.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/chart.js": {
+    "file": "assets/chart-Ct78DFbm.js",
+    "name": "chart",
+    "src": "resources/js/chart.js",
+    "isEntry": true
+  }
+}

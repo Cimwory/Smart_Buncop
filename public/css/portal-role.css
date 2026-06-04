@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap");
+
+:root {
+    --portal-bg-1: #f4fff5;
+    --portal-bg-2: #e7f7ee;
+    --portal-bg-3: #f0fbf3;
+    --portal-panel: #ffffffcc;
+    --portal-line: #b4dec0;
+    --portal-text: #133f2a;
+    --portal-subtext: #35624d;
+    --portal-pill: #dff4e5;
+    --portal-card: #f8fffbf2;
+    --portal-card-line: #b9ddc4;
+    --portal-muted: #5f7d6e;
+}
+
+.portal-role-page {
+    font-family: "Manrope", sans-serif;
+    background:
+        radial-gradient(260px 220px at 95% 0%, #8cd4a055, transparent 75%),
+        radial-gradient(320px 240px at 0% 100%, #98ddb055, transparent 75%),
+        linear-gradient(135deg, var(--portal-bg-1), var(--portal-bg-2), var(--portal-bg-3));
+}
+
+.portal-wrap {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 28px 22px;
+}
+
+.portal-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.portal-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid #8bbfa0;
+    background: #f2fcf6;
+    color: #184e34;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.portal-hero,
+.portal-panel {
+    border-radius: 22px;
+    border: 1px solid var(--portal-line);
+    background: var(--portal-panel);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 28px #1e5a3826;
+}
+
+.portal-hero {
+    padding: 24px 24px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.portal-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--portal-pill);
+    border: 1px solid #a7d5b6;
+    color: #256145;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.portal-title {
+    margin-top: 12px;
+    color: var(--portal-text);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.portal-subtitle {
+    color: var(--portal-subtext);
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.portal-panel {
+    padding: 20px;
+}
+
+.portal-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.portal-grid.two {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+.portal-grid.three {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+}
+
+.portal-menu-tile {
+    display: block;
+    border-radius: 16px;
+    border: 1px solid var(--portal-card-line);
+    background: var(--portal-card);
+    text-decoration: none;
+    color: inherit;
+    padding: 18px 18px;
+    min-height: 128px;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.portal-menu-tile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px #0000004d;
+}
+
+.portal-menu-title {
+    color: var(--portal-text);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.portal-menu-subtitle {
+    margin-top: 8px;
+    color: var(--portal-subtext);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.portal-kv {
+    border-radius: 14px;
+    border: 1px solid var(--portal-card-line);
+    background: var(--portal-card);
+    padding: 14px 16px;
+}
+
+.portal-kv-label {
+    color: #a5d6a7;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portal-kv-value {
+    color: #1d4f36;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.portal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.portal-table th,
+.portal-table td {
+    border-bottom: 1px solid #d0e7d7;
+    padding: 12px 10px;
+    text-align: left;
+    color: #1f3e2d;
+    font-size: 13px;
+}
+
+.portal-table th {
+    color: #2f6a4d;
+    font-weight: 700;
+}
+
+.portal-form-control,
+.portal-form-select {
+    width: 100%;
+    border: 1px solid #b8d8c3;
+    border-radius: 10px;
+    background: #f8fffb;
+    color: #1c4530;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.portal-form-control::placeholder {
+    color: #6f8f7f;
+}
+
+.portal-form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.portal-btn {
+    border: 1px solid #8fc4a5;
+    border-radius: 10px;
+    padding: 10px 14px;
+    background: #1f6a45;
+    color: #f4fff8;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.portal-btn.secondary {
+    background: #f2fcf6;
+    color: #25553d;
+}
+
+.portal-section-title {
+    color: #17432e;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.portal-status-text {
+    color: var(--portal-muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.portal-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 12px;
+}
+
+.portal-filter-card {
+    border: 1px solid var(--portal-card-line);
+    border-radius: 14px;
+    padding: 14px;
+    background: #fbfffc;
+}
+
+.portal-filter-title {
+    color: var(--portal-text);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.portal-filter-label {
+    color: #315f49;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.portal-chart-wrap {
+    position: relative;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: 1px solid #c9e2d3;
+    background: #fcfffd;
+    padding: 10px;
+}
+
+.portal-chart-tooltip {
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    border-radius: 10px;
+    border: 1px solid #a3cab2;
+    background: #0f2f20ee;
+    color: #f1fff6;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: none;
+    z-index: 4;
+}
+
+@media (max-width: 900px) {
+    .portal-wrap {
+        max-width: 760px;
+        padding: 18px 14px;
+    }
+
+    .portal-grid.two,
+    .portal-grid.three,
+    .portal-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portal-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portal-menu-tile {
+        min-height: 0;
+    }
+}
